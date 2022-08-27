@@ -21,3 +21,10 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 - `cdk deploy` deploy this stack to your default AWS account/region
 
 - `cdk destroy` remove the stack
+
+
+To Delete bootstrap
+
+`aws cloudformation delete-stack --stack-name CDKToolkit`
+`aws s3 ls | grep cdktoolkit # copy the name`
+`aws s3 rb --force s3://cdktoolkit-stagingbucket-abcdef # <replace the name here>`
