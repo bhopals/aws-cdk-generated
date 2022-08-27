@@ -26,5 +26,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 To Delete bootstrap
 
 `aws cloudformation delete-stack --stack-name CDKToolkit`
+
 `aws s3 ls | grep cdktoolkit # copy the name`
+
 `aws s3 rb --force s3://cdktoolkit-stagingbucket-abcdef # <replace the name here>`
